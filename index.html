@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./IMG/EXP A.I 193.jpg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                </figure>
+
+                <div class="info-content">
+                    <img class="mymg" src="./IMG/EXP_A.I_192-removebg-preview (1).png" height=""  width="300px"   alt="">
+                    <h1 class="name" title="ALALADE">ALALADE MOSES</h1>
+                    <p class="title">Full Stack Web Developer</p>
+                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:mosesalalade11@gmail.com" class="contact-link">mosesalalade11@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+919667124661" class="contact-link">+2348105917811</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="2003-01-26">July 10th</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <a href="https://maps.app.goo.gl/Fm9rsKjtasPS544p7" target="_blank">
+                            <address>N0.4 Kajola Street,Ifelodun 2,Muslim Odinjo,Ibadan.</address>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://github.com/Alalade-Moses" target="_blank" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://wa.me/8105917811" target="_blank" class="social-link"><ion-icon name="logo-whatsapp"></ion-icon> </a></li>
+                    <li class="social-item"><a href="https://www.linkedin.com/in/alalade-moses" target="_blank" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+           <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>Fast-paced and creative web developer with strong expertise in HTML, CSS, JavaScript,Node.js, and modern frameworks like TailwindCSS and React.js. Adept at designing and implementing visually appealing and user-friendly websites that meet client requirements.                    </p>
+                    <p>With a Bachelor's in Computer Applications and hands-on experience in web development projects, I possess a solid understanding of both front-end and back-end development. My portfolio includes creating responsive web pages, integrating Bootstrap and TailwindCSS for enhanced designs, and exploring backend data handling using Node.js, SQL, and MongoDB. Passionate about delivering efficient, secure, and dynamic web solutions, I am eager to bring my skills to innovative projects and contribute to organizational success.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Design</h4>
+                                <p class="service-item-text">The most modern and high-quality design made at a professional level.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+                                <p class="service-item-text">High-quality development of sites at the professional level.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                        </div>
+ 
+                    </section>
+                </div>
+            </article>
+            
+            <article class="resume " data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Ladoke Akintola University of Technology</h4>
+                            <span>2021</span>
+                            <p class="timeline-text">There I learnt a wide range of topics that are essential to understanding both the theory and practical aspects of computing. This involves programming fundamentals, computer architecture, operating systems, databases, software engineering, problem solving, collaboration and communication soft skills.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Experience</h4>
+                            <span>2025</span>
+                            <p class="timeline-text">Developement of an Inventory Management System  utilizing my skills as a Frontend Developer to create a user-friendly interface and as a Business Analyst to ensure the system met the organization's needs.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title"></h4>
+                            <span>2025</span>
+                            <p class="timeline-text">Completed a 6-month intership as a full Stack Developer intern at LAUTECH SOFTWARE ENGINEERING INSTITUTE,gaining hands-on experience in designing and developing responsive web applications with front-end technologies like HTML,CSS and JavaScript,and back-end technologies like Node.js.During the period I sucessfully implemented various projects such as church web app honing my skills in problem solving,collaboration,and coding practices. </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="skill">
+                    <h3 class="h3 skills-title">My Skills</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Web Design (HTML-CSS-JS)</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">JavaScript (core,MongoDB)</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Tailwind CSS</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">React.js</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Node.js</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portfolio " data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <div class="filter-select-box">
+                        <button class="filter-select " data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item"><button data-select-item>All</button></li>
+                            <li class="select-item"><button data-select-item>Web Design</button></li>
+                            <li class="select-item"><button data-select-item>Applications</button></li>
+                            <li class="select-item"><button data-select-item>Web Development</button></li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./IMG/Screenshot (19).png" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Church website</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./IMG/Screenshot (18).png" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Tantalizer clone</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./IMG/Screenshot (16).png" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Chicken Reublic Clone</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./IMG/Screenshot (20).png" alt="brawlhalla" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Registration Page</h3>
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./IMG/Screenshot (21).png" alt="dsm." loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Medical Consultant</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="/IMG/Screenshot (17).png" alt="metaspark" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Medical consultant</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./IMG/Screenshot (5).png" alt="summary" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Ecommerce</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./IMG/Screenshot (22).png" alt="task manager" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Finance</h3>
+                                <p class="project-category">Web Developement</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./IMG/Screenshot (23).png" alt="arrival" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Entreprenure</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            
+            <article class="contact " data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15827.656099275446!2d3.899578392996738!3d7.363533929015737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sOremeji%20olopometa%2Colorunsogo%20muslim%20Academy!5e0!3m2!1sen!2sng!4v1746817967989!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="https://formsubmit.co/mosesalalade11@gmail.com" method="post" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+    </main>
+  <div style="color:#1d1e22;">
+Copyright (c) 2025 by ALALADE MOSES
+</div>
+
+
+    <script src="./index.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
