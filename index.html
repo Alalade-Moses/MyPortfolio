@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alalade Moses- Full Stack Developer Portfolio</title>
+    <meta name="description" content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating amazing web applications with beautiful user experiences.">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo" onclick="scrollToSection('home')"> <img src="./IMG/moses_logo-removebg-preview.png" height="100px" width="" alt="Portfolio_logo"></div>
+            <ul class="nav-menu">
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#certifications" onclick="scrollToSection('certifications')">Certifications</a></li>
+                <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars" id="mobile-menu-icon"></i>
+            </button>
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="#home" onclick="scrollToSection('home')">Home</a>
+                <a href="#about" onclick="scrollToSection('about')">About</a>
+                <a href="#certifications" onclick="scrollToSection('certifications')">Certifications</a>
+                <a href="#projects" onclick="scrollToSection('projects')">Projects</a>
+                <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="accent-text">Alalade Moses</span></h1>
+            <div class="typewriter">
+                <span class="typewriter-text" id="typewriter"></span>
+            </div>
+            <p>I create amazing web applications with modern technologies and beautiful user experiences.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary" onclick="scrollToSection('projects')">
+                    <i class="fas fa-eye"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline" onclick="scrollToSection('contact')">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-up">
+                <h2 class="text-reveal">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll fade-left">
+                    <img src="./IMG/IMG-20250618-WA0039.jpg"  alt="Professional developer portrait">
+                </div>
+                <div class="about-content animate-on-scroll fade-right">
+                    <h3 class="text-reveal">Passionate Developer & Problem Solver</h3>
+                    <p class="text-reveal">With over 3 years of experience in full-stack development, I specialize in creating scalable web applications using modern technologies. I'm passionate about clean code, user experience, and staying up-to-date with the latest industry
+                        trends.
+                    </p>
+                    <p class="text-reveal">My journey in software development started with curiosity and has evolved into a deep love for crafting digital solutions that make a real impact. I believe in writing maintainable code and building applications that users love.</p>
+                    <div class="skills-grid stagger-children">
+                        <div class="skill-card animate-on-scroll scale-in">
+                            <h4>Frontend</h4>
+                            <p>Html, Css, Javasript, React, Next.js,</p>
+                        </div>
+                        <div class="skill-card animate-on-scroll scale-in">
+                            <h4>Backend</h4>
+                            <p>Node.js,Express.js</p>
+                        </div>
+                        <div class="skill-card animate-on-scroll scale-in">
+                            <h4>Database</h4>
+                            <p>ExcelSheet,MongoDB, PostgreSQL</p>
+                        </div>
+                        <div class="skill-card animate-on-scroll scale-in">
+                            <h4>Cloud</h4>
+                            <p>AWS, Docker, CI/CD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-up">
+                <h2 class="text-reveal">Certifications</h2>
+                <div class="section-divider"></div>
+                <p class="text-reveal">Continuous learning and professional development achievements</p>
+            </div>
+            <div class="cards-grid stagger-children">
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/EDITED2.png" alt="LAUTECH SOFTWARE INSTITUTE" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">HTML,CSS BOOTCAMP</h3>
+                        <p class="card-description">LAUTECH SOFTWARE INSTITUTE</p>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Obtained:December 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/Screenshot (7).png" alt="JAVASCRIPT 10 COURSES" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">JAVASCRIPT 10 COURSES</h3>
+                        <p class="card-description">UDEMY</p>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Obtained: April 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/EDITED3.png" alt="DATA SCIENCE" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">DATA SCIENCE</h3>
+                        <p class="card-description">INTERNATIONAL BUSINESS MACHINE</p>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Obtained: February 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/EDITED1.png" alt="DATA ANALYTICS ESSENTIALS" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">DATA ANALYTICS ESSENTIALS</h3>
+                        <p class="card-description">CISCO NETWORKING ACADEMY</p>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Obtained: March 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/EDITED4.png" alt="AGILE PROJECT MANAGEMENT" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">AGILE PROJECT MANAGEMENT</h3>
+                        <p class="card-description">HP CERTIFICATION</p>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Obtained: August 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-up">
+                <h2 class="text-reveal">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="text-reveal">A showcase of my latest work and technical achievements</p>
+            </div>
+            <div class="cards-grid stagger-children">
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/Screenshot (5).png"alt =" E-Commerce Platform interface" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">E-Commerce Platform</h3>
+                        <p class="card-description">Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="card-links">
+                            <a href=""><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href=""><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/Screenshot (16).png" alt="Task Management App interface" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title"> CHICKEN REPUBLIC CLONE APP</h3>
+                        <p class="card-description">Collaborative project management tool with real-time updates, team collaboration, and progress tracking.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JAVASCRIPT</span>
+                        </div>
+                        <div class="card-links">
+                            <a href=""><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href=""><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/Screenshot (19).png" alt="A Church website which contains registration page" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title"> A CHURCH WEBSITE</h3>
+                        <p class="card-description"> A Church website which contains registration page .</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JAVASCRIPT</span>
+                        </div>
+                        <div class="card-links">
+                            <a href=""><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                            <a href=""><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/Screenshot (22).png" alt=" A FINANCE WEBSITE CLONE" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title"> A FINANCE WEBSITE CLONE</h3>
+                        <p class="card-description"> 
+                            A finnace website for banking personal finance Management
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JAVASCRIPT</span>
+                        </div>
+                        <div class="card-links">
+                            <a href=""><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                            <a href=""><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/Screenshot (23).png" alt="AN E-COMMERCE WEBSITE" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title"> AN E-COMMERCE WEBSITE</h3>
+                        <p class="card-description"> An E-Commerce website for Online shopping.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JAVASCRIPT</span>
+                        </div>
+                        <div class="card-links">
+                            <a href=""><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                            <a href=""><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-animate animate-on-scroll">
+                    <img src="./IMG/Screenshot (17).png" alt="A Church website which contains registration page" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">A CONSULTANT WEBSITE CLONE</h3>
+                        <p class="card-description"> A consultant website for Medical device maufacture</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JAVASCRIPT</span>
+                        </div>
+                        <div class="card-links">
+                            <a href=""><i class="fas fa-external-link-alt"></i>Live Demo</a>
+                            <a href=""><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;" class="animate-on-scroll fade-up">
+                <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                    <span>Want to see more projects?</span>
+                    <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    
+    </section>
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll fade-up">
+                <h2 class="text-reveal">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="text-reveal">Let's discuss your next project and bring your ideas to life</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll fade-left">
+                    <h3 class="text-reveal">Let's Connect</h3>
+                    <div class="contact-item animate-on-scroll scale-in">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <h4>Email</h4>
+                            <p>mosesalalade11@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item animate-on-scroll scale-in">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-item-content">
+                            <h4>Phone</h4>
+                            <p>+2348105917811</p>
+                        </div>
+                    </div>
+                    <div class="contact-item animate-on-scroll scale-in">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Location</h4>
+                            <p>N0 4,Ifelodun 2,Muslim Odinjo,Ibadan,Oyo state,Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="social-links animate-on-scroll fade-up">
+                          <a href="https://www.linkedin.com/in/alalade-moses"  target="_blank"><i class="fab fa-linkedin"></i></a>
+                         <a href="https://github.com/Alalade-Moses"  target="_blank"><i class="fab fa-github"></i></a>
+                       <a href="https://wa.me/8105917811" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll fade-right" id="contactForm" action="https://formsubmit.co/mosesalalade11@gmail.com" method="post">
+                    <div class="form-group text-reveal">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group text-reveal">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group text-reveal">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                    </div>
+                    <div class="form-group text-reveal">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn animate-on-scroll scale-in" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Alalade Moses</div>
+            <p>Full Stack Developer passionate about creating amazing web experiences</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/alalade-moses"  target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Alalade-Moses"  target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/8105917811" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Alalade Moses. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./JAVASCRIPT/index.js"></script>
+</body>
+
+</html>
