@@ -1,5 +1,5 @@
 // Typewriter Effect
-const texts = ['Full Stack Developer', 'React Specialist', 'Wordpress Designer', 'Project Manager',"Business Analyst"];
+const texts = ['Full Stack Developer', 'Wordpress Designer', 'React Specialist', 'Project Manager',"Business Analyst"];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
